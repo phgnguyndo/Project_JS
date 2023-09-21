@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+<body>
+     <div id="root"></div>
+     <script type="text/babel">
+         const course=[
+            {
+                name:'HTML'
+            },
+            {
+                name:'Responsive'
+            },
+            {
+                name:'ReactJS'
+            }
+        ]
+
+        const ul=<ul>
+            {course.map(
+                course=><li>{course.name}</li>
+            )}
+            </ul>
+            ReactDOM.render(ul,document.getElementById('root'))
+     </script>
+    <!-- <script>
+        const postItem=React.createElement(
+            'div',
+            {
+                className:'post-item'
+            },
+            React.createElement(
+                'h2',
+                {
+                    title:'Hoc reactjs tai f8'
+                },  'Hoc ReactJS'        
+            ),
+            React.createElement(
+                'p',{},'Hoc ReactJs tu co ban toi nang cao'
+            ),
+        )
+        // console.log(postItem)
+        // const root=document.getElementById('root')
+        // ReactDOM.render(postItem,root)
+
+        const container=document.getElementById('root')
+        const root=ReactDOM.createRoot(container)
+        root.render(postItem)
+    </script> -->
+
+    <!-- <script>
+        @18
+        const exercise=React.createElement('ul',{},
+        React.createElement('li',{},'Javascript'),
+        React.createElement('li',{},'ReactJS'),
+        )
+        const container=document.getElementById('root')
+        const root=ReactDOM.createRoot(container)
+        root.render(exercise)
+
+    </script> -->
+
+
+    
+</body>
+</html>
